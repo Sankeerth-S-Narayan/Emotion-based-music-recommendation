@@ -242,7 +242,7 @@ emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutra
 # Not Attach OpenCL context to OpenCV.
 cv2.ocl.setUseOpenCL(False)
 # return video from the first webcam on your computer.
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(-1)
 page_bg_img = """
 <style>
 .stApp {

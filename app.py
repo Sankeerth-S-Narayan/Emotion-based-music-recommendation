@@ -253,10 +253,10 @@ background-size: cover;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 # Text or heading's
-title = '<p style="font-family: Arial, Helvetica, sans-serif;text-align:center; color:black;font-size: 50px;font-weight:bold;">EMOTION BASED MUSIC RECOMMENDATION</p>'
+title = '<p style="font-family: Arial, Helvetica, sans-serif;text-align:center; backdrop-filter: blur(20px) saturate(90%);color:black;font-size: 50px;font-weight:bold;">EMOTION BASED MUSIC RECOMMENDATION</p>'
 st.markdown(title, unsafe_allow_html=True)
-content1 = '<br><p style="font-family:sans-serif; font-size: 20px;font-weight:bold;color:black;text-align:center">This web based app written in python will first scan your current emotions with the help of OpenCV & then crop the image of your face from entire frame. After cropping, the image is sent to a pretrained model to predict the emotion of the cropped image. This will happen for 30-40 times in 2-3 seconds, and once the emotion is detected, based on the emotion, songs are recomended </p>'
-content2 = '<br><p style="font-family:sans-serif; font-size: 30px;font-weight:bold;color:black;text-align:center">Click on the name of recommended song to reach website </p>'
+content1 = '<br><p style="font-family:sans-serif; font-size: 20px;font-weight:bold;backdrop-filter: blur(20px) saturate(90%);color:black;text-align:center">This web based app written in python will first scan your current emotions with the help of OpenCV & then crop the image of your face from entire frame. After cropping, the image is sent to a pretrained model to predict the emotion of the cropped image. This will happen for 30-40 times in 2-3 seconds, and once the emotion is detected, based on the emotion, songs are recomended </p>'
+content2 = '<br><p style="font-family:sans-serif; font-size: 30px;font-weight:bold;color:black;backdrop-filter: blur(20px) saturate(90%);text-align:center">Click on the name of recommended song to reach website </p>'
 st.markdown(content1, unsafe_allow_html=True)
 st.markdown(content2, unsafe_allow_html=True)
 
@@ -335,7 +335,7 @@ new_df = fun(list)
 st.write("")
 
 # Normal text
-st.markdown("<h5 style='text-align: center; color: black;'><b>Recommended song's with artist names</b></h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center;backdrop-filter: blur(20px) saturate(90%); color: black;'><b>Recommended song's with artist names</b></h5>", unsafe_allow_html=True)
 
 # Just for separation
 st.write("---------------------------------------------------------------------------------------------------------------------")
